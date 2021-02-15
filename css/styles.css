@@ -295,6 +295,9 @@ footer {
 
     .keyword h3 {
         grid-column: 1 / -1;
+        margin-bottom: 2.4rem;
+        align-self: start;
+        width: 32%;
     }
 
     section.statistics {
@@ -360,10 +363,14 @@ footer {
         grid-column: 1 / -1;
         width: 10%;
         align-self: start;
+        color: #2c3e5b;
     }
 }
 
 @media only screen and (min-width: 1200px) {
+    nav ul li {
+        margin: 2.4rem;
+    }
 
     section.box-container,
     section.testimonials {
@@ -379,19 +386,19 @@ footer {
     }
 
     .landscape {
-        background-image: url(../img/mobile-optimized/blue-landscape.jpg);
+        background-image: url(../img/desktop-optimized/blue-landscape.jpg);
     }
     
     .things {
-        background-image: url(../img/mobile-optimized/arash-asghari-AYAZnkZWkb4-unsplash.jpg);
+        background-image: url(../img/desktop-optimized/arash-asghari-AYAZnkZWkb4-unsplash.jpg);
     }
     
     .fashion {
-        background-image: url(../img/mobile-optimized/elegant-red-formal-fashion.jpg);
+        background-image: url(../img/desktop-optimized/elegant-red-formal-fashion.jpg);
     }
     
     .people {
-        background-image: url(../img/mobile-optimized/four-friends.jpg);
+        background-image: url(../img/desktop-optimized/four-friends.jpg);
     }
     
     .design {
@@ -399,24 +406,38 @@ footer {
     }
     
     .technology {
-        background-image: url(../img/mobile-optimized/daniel-korpai-HyTwtsk8XqA-unsplash.jpg);
+        background-image: url(../img/desktop-optimized/daniel-korpai-HyTwtsk8XqA-unsplash.jpg);
     }
     
     .cooking {
-        background-image: url(../img/mobile-optimized/ramen-noodles-kitchen-and-cooking.jpg);
+        background-image: url(../img/desktop-optimized/ramen-noodles-kitchen-and-cooking.jpg);
     }
     
     .cityscapes {
-        background-image: url(../img/mobile-optimized/josh-rose-9YQGFzg0RiM-unsplash.jpg);
+        background-image: url(../img/desktop-optimized/josh-rose-9YQGFzg0RiM-unsplash.jpg);
     }
     
     .animals {
-        background-image: url(../img/mobile-optimized/dog-paws.jpg);
+        background-image: url(../img/desktop-optimized/dog-paws.jpg);
     }
     
     .nature {
-        background-image: url(../img/mobile-optimized/standing-in-woods.jpg);
+        background-image: url(../img/desktop-optimized/standing-in-woods.jpg);
     }
     
 
+}
+
+@media only screen and (min-width: 1500px) {
+    header {
+        justify-content: space-evenly;
+    }
+
+    .flex {
+        margin-left: 0 10%;
+    }
+
+    nav ul li {
+        margin-right: 6rem;
+    }
 }
