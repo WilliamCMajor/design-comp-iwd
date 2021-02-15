@@ -131,6 +131,7 @@ a.reward {
     height: 50rem;
     background-color: #2c3e5b;
     margin: 2.4rem 0; /* take off maybe */
+    color: #fff;
 }
 
 .svg-container {
@@ -145,5 +146,277 @@ a.reward {
     width: 17.2rem;
 }
 
+.box div:last-of-type {
+    padding: 2rem;
+}
 
+.testimonials {
+    background-color: #f9f8f7;
+    padding: 2rem;
+    font-family: 'Piazzolla', serif;
+    color: #2c3e5b;
+}
 
+.testimonials h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.testimonials p {
+    color: #2c3e5b;
+    font-weight: bold;
+}
+
+/* ******** keyword section ******* */
+section.keyword {
+    display: grid;
+}
+
+.keyword h3{
+    color: #2c3e5b;
+    text-align: center;
+}
+
+section.keyword > div{
+    width: 100%;
+    height: 30rem;
+    color: #fff;
+    font-family: 'Piazzolla', serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.landscape,
+.things,
+.fashion,
+.people,
+.design,
+.technology,
+.cooking,
+.cityscapes,
+.animals,
+.nature {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.landscape {
+    background-image: url(../img/mobile-optimized/blue-landscape.jpg);
+}
+
+.things {
+    background-image: url(../img/mobile-optimized/arash-asghari-AYAZnkZWkb4-unsplash.jpg);
+}
+
+.fashion {
+    background-image: url(../img/mobile-optimized/elegant-red-formal-fashion.jpg);
+}
+
+.people {
+    background-image: url(../img/mobile-optimized/four-friends.jpg);
+}
+
+.design {
+    background-image: url(../img/mobile-optimized/dark-wall-bedside-table.jpg);
+}
+
+.technology {
+    background-image: url(../img/mobile-optimized/daniel-korpai-HyTwtsk8XqA-unsplash.jpg);
+}
+
+.cooking {
+    background-image: url(../img/mobile-optimized/ramen-noodles-kitchen-and-cooking.jpg);
+}
+
+.cityscapes {
+    background-image: url(../img/mobile-optimized/josh-rose-9YQGFzg0RiM-unsplash.jpg);
+}
+
+.animals {
+    background-image: url(../img/mobile-optimized/dog-paws.jpg);
+}
+
+.nature {
+    background-image: url(../img/mobile-optimized/standing-in-woods.jpg);
+}
+
+/* ******** Section Statistics ******** */
+.statistics {
+    background-color: #f9f8f7;
+    text-align: center;
+}
+
+footer {
+    padding: 2rem;
+    margin: 2.4rem auto;
+    color: #8b8b8b;
+}
+
+@media only screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        border-bottom: none;
+    }
+
+    .banner {
+        padding: 4.8rem;
+    }
+
+    .search-box {
+        width: 60%;
+    }
+
+    .box div:last-of-type {
+        padding: 4.8rem;
+    }
+
+    .testimonials {
+        padding: 4.8rem;
+        display: flex;
+        margin-bottom: 2.4rem;
+    }
+
+    section.keyword {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2.4rem;
+    }
+
+    .keyword h3 {
+        grid-column: 1 / -1;
+    }
+
+    section.statistics {
+        padding: 2.4rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .wrapper {
+        max-width: 1920px;
+    }
+
+    .banner {
+        padding: 10%;
+    }
+
+    svg.nav-bars {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header nav {
+        max-height: 30rem;
+    }
+
+    section.box-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.4rem;
+        padding: 2.4rem;
+    }
+    
+    section.box-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 4.8rem 5%;
+    }
+
+    .box {
+        margin: 0;
+    }
+    
+    .testimonials {
+        justify-content: space-around;
+    }
+
+    section.statistics {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 2.4rem 10%;
+    }
+
+    .statistics h3 {
+        grid-column: 1 / -1;
+        width: 10%;
+        align-self: start;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    section.box-container,
+    section.testimonials {
+        padding: 4.8rem 10%;
+    }
+
+    section.keyword {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .banner {
+        background-image: url(../img/desktop-optimized/waterfall-3723422_1920.jpg);
+    }
+
+    .landscape {
+        background-image: url(../img/mobile-optimized/blue-landscape.jpg);
+    }
+    
+    .things {
+        background-image: url(../img/mobile-optimized/arash-asghari-AYAZnkZWkb4-unsplash.jpg);
+    }
+    
+    .fashion {
+        background-image: url(../img/mobile-optimized/elegant-red-formal-fashion.jpg);
+    }
+    
+    .people {
+        background-image: url(../img/mobile-optimized/four-friends.jpg);
+    }
+    
+    .design {
+        background-image: url(../img/mobile-optimized/dark-wall-bedside-table.jpg);
+    }
+    
+    .technology {
+        background-image: url(../img/mobile-optimized/daniel-korpai-HyTwtsk8XqA-unsplash.jpg);
+    }
+    
+    .cooking {
+        background-image: url(../img/mobile-optimized/ramen-noodles-kitchen-and-cooking.jpg);
+    }
+    
+    .cityscapes {
+        background-image: url(../img/mobile-optimized/josh-rose-9YQGFzg0RiM-unsplash.jpg);
+    }
+    
+    .animals {
+        background-image: url(../img/mobile-optimized/dog-paws.jpg);
+    }
+    
+    .nature {
+        background-image: url(../img/mobile-optimized/standing-in-woods.jpg);
+    }
+    
+
+}
